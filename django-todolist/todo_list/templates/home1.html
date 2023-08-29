@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    {% load static %}
+    <title>Hello, world!</title>
+    <link rel="stylesheet" href="{% static 'html/style1.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css1/owl.theme.default.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css1/owl.carousel.min.css '%}"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css "/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .myicon{
+    font-size: 80px;
+    padding: 15px;
+}
+.header{
+    height:90vh;
+    width: 100;
+    color: rgb(255, 255, 255); 
+    background: linear-gradient(to right,rgba(11, 3, 31, 0.9),rgba(0,0,0,0.2)),url("https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg");
+
+
+    background-size:cover;
+}
+.message{
+   background:  linear-gradient(to right,rgba(5, 7, 48, 0.608),rgba(10, 0, 0, 0.082));
+}
+.msg{
+   background:  linear-gradient(to right,rgba(5, 32, 48, 0.608),rgba(10, 0, 0, 0.082));
+}
+.Msg{
+   background:  linear-gradient(to right,rgba(2, 3, 48, 0.61),rgba(10, 0, 0, 0.274));
+}
+.Msg1{
+   background:  linear-gradient(to right,rgba(33, 33, 48, 0.295),rgba(10, 0, 0, 0.274));
+}
+.msg1{
+   background:  linear-gradient(to right,rgba(5, 32, 48, 0.608),rgba(10, 0, 0, 0.082));
+}
+    </style>
+    <script type="text/javascript">  
+      function msg(){  
+       alert("Hey welcome to django project Employee Management");  
+      }  
+      </script>  
+  </head>
+  <body>
+  
+<!-- coding -->
+<!--bottstrap navbar-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light menus">
+   <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+       <!-- <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>-->
+        <li class="nav-item">
+            <a class="nav-link" href="#about">About </a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#message">Contact </a>
+        </li>
+        
+</ul>
+</div>
+</div>
+</nav>
+<!-- end of navbar-->
+<!-- start of header-->
+<header class="  header "id="home " >
+    <div class="container h-100">
+    <div class="row h-100 align-items-center">
+        <div class="col-md-6 offset-md-3 text-center">
+          <h3 class="text-center animate__animated animate__bounceInDown wow">Welcome to Aman Projects Site</h3>  
+          <p class="animate__animated animate__zoomIn wow" data-wow-delays="5000ms">
+              This site contains the deatils about projects which are developed by me using various 
+              programming languages.<br>
+              <b style="color:rgba(255, 196, 0, 0.932)">Click on the Below link to see Django Project</b> 
+                
+              <li><a style="color:rgb(0, 140, 255)" href="home1/">Todo List Management</a></li>
+            </p>
+            <form>  
+              <input class="btn btn-primary animate__animated animate__bounceInUp wow" type="button" value="Click Me " onclick="msg()"/>  
+              </form>  
+       
+        </div>
+        </div>
+    </div>
+</header>
+<!--end of header-->
+<!-- start of section-->
+<section class="message py-5 " id="about">
+  <div class="container text-center p-5" >
+    <h1 class="wow animate__animated animate__zoomIn">About Project</h1>
+    <p  class="wow animate__animated animate__zoomIn">
+    This Project is Designed using Django.The Project Contains List Of Employees of Company.<br> The Employees data can be 
+    Updated or Deleted and Added.Also if the Employee is online he can update<br> his working status in the list.
+    There is also a testimonials link in the navbar which is designed using <br>
+    <b>Django Admin</b> through which the employee
+    can upload photos and get ratings.<br>
+    The Database attached to this Project is Dbsqlite which is the default database.
+    </p>
+  
+    <form>  
+      <input class="btn btn-primary animate__animated animate__bounceInUp wow" type="button" value="Click Me " onclick="msg()"/>  
+      </form>  
+</div>
+</section>
+
+
+<section class="Msg1 services wow animate__animated animate__zoomIn"> 
+<div class="container text-center py-5">
+<h2>List of Django Projects</h2>
+<div class ="row section ">
+  <div class ="col-md-4">
+    <div class="card Msg">
+   <div class="card-body">
+    <i class="fa fa-sitemap"style="font-size:50px;color:black"></i>
+    <h2>Django Project 1:</h2>
+    <h3>Employee Management</h3>
+    <p> Available in Previous site Link </p>
+    <p style="color:darkblue">Status:Completed</p>
+   </div>
+
+    </div>
+  </div> 
+  <div class ="col-md-4">
+    <div class="card Msg">
+   <div class="card-body">
+    <i class="fa fa-sitemap"style="font-size:50px;color:black"></i>
+    <h2>Django Project 2:</h2>
+    <h3>Todo-List</h3>
+    <li><a style="color:rgb(7, 19, 187)" href="home1/">Click for Todo List Management</a></li>
+    <p style="color:darkblue">Status:Completed</p>
+   </div>
+
+    </div>
+  </div>
+  <div class ="col-md-4">
+    <div class="card Msg">
+   <div class="card-body">
+    <i class="fa fa-sitemap"style="font-size:50px;color:black"></i>
+    <h2>Django Project 3:</h2>
+    <h3>Invoice Generation</h3>
+    <p>Available in next site link </p>
+    <p style="color:darkblue">Status:Completed</p>
+   </div>
+
+    </div>
+  </div>
+  <div class ="col-md-4">
+    <div class="card Msg">
+   <div class="card-body">
+    <i class="fa fa-sitemap"style="font-size:50px;color:black;"></i>
+    <h2>Django Project 4:</h2>
+    <h3>Order Management:</h3>
+    <p style="color:darkblue">Status:InProgress</p>
+   </div>
+
+    </div>
+  </div>
+  <div class ="col-md-4">
+    <div class="card Msg">
+   <div class="card-body">
+    <i class="fa fa-sitemap"style="font-size:50px;color:black"></i>
+    <h2>Django Project 5:</h2>
+    <h3>Ecommerce :</h3>
+    <p style="color:darkblue">Status:InProgress</p>
+   </div>
+
+    </div>
+  </div>
+</div>
+
+ </section>
+
+
+
+
+
+
+
+
+<section class=" Msg wow animate__animated animate__zoomIn">
+
+<h1 class="text-center py-5">List of Completed projects</h1>
+<div class="container ">
+<!-- Set up your HTML -->
+<div class=" owl-carousel owl-theme">
+<div>
+<div class="card text-center msg1">
+    <div class="card-body">
+      <img src="https://c4.wallpaperflare.com/wallpaper/676/293/313/programmer-wallpaper-preview.jpg"
+       alt="java"
+       class="img-fluid rounded-square mx-auto"
+      style="max-width:150px  ;"/> 
+        <h3>Projects and APIS Using Django and NodeJs</h3>
+     
+      <div class="container">
+        <form>  
+          <input class="btn btn-primary animate__animated animate__bounceInUp wow" type="button" value="Click Me " onclick="msg()"/>  
+          </form>  
+      </div>
+    </div>
+</div>
+  </div>
+<div> 
+    <div class="card text-center msg1">
+        <div class="card-body">
+          <img src="https://c4.wallpaperflare.com/wallpaper/676/293/313/programmer-wallpaper-preview.jpg"
+           alt="java"
+           class="img-fluid rounded-square mx-auto"
+          style="max-width:150px  ;"/> 
+            <h3>Projects Using ReactJS adn NextJS.</h3>
+          <div class="container">
+            <form>  
+              <input class="btn btn-primary animate__animated animate__bounceInUp wow" type="button" value="Click Me " onclick="msg()"/>  
+              </form>  
+          </div>
+        </div>
+     </div>
+    </div> 
+    <div>
+    <div class="card text-center msg1">
+        <div class="card-body">
+          <img src="https://c4.wallpaperflare.com/wallpaper/676/293/313/programmer-wallpaper-preview.jpg"
+           alt="java"
+           class="img-fluid rounded-square mx-auto"
+          style="max-width:150px  ;"/> 
+            <h3>Projects Using Java And Python</h3>
+          
+          <div class="container">
+            <form>  
+              <input class="btn btn-primary animate__animated animate__bounceInUp wow" type="button" value="Click Me " onclick="msg()"/>  
+              </form>  
+          </div>
+        </div>
+    </div>
+    </div>
+      
+      <div>
+      <div class="card text-center msg1">
+          <div class="card-body">
+            <img src="https://c4.wallpaperflare.com/wallpaper/676/293/313/programmer-wallpaper-preview.jpg"
+             alt="java"
+             class="img-fluid rounded-square mx-auto"
+            style="max-width:150px  ;"/> 
+              <h3>Rest APIS Using Spring Boot</h3>
+         
+            <div class="container">
+              <form>  
+                <input class="btn btn-primary animate__animated animate__bounceInUp wow" type="button" value="Click Me " onclick="msg()"/>  
+                </form>  
+            </div>
+          </div>
+      </div>
+    </div>
+    <div>
+        <div class="card text-center msg1">
+            <div class="card-body">
+              <img src="https://c4.wallpaperflare.com/wallpaper/676/293/313/programmer-wallpaper-preview.jpg"
+               alt="java"
+               class="img-fluid rounded-square mx-auto"
+              style="max-width:150px  ;"/> 
+                <p>Learning Microservice architecture rather than developing applications using monolothic architecture </p>
+        
+              <div class="container">
+                
+                <form>  
+                  <input class="btn btn-primary animate__animated animate__bounceInUp wow" type="button" value="Click Me " onclick="msg()"/>  
+                  </form>  
+              </div>
+            </div>
+        </div>
+      </div>
+</div>
+</div>
+</section>
+
+<!--donload-->
+<section class="Msg wow animate__animated animate__zoomIn message py-5">
+  <div class="container text-center" >
+    
+    <h1 style="color: black;">Some Additional Devops tools I use</h1>
+    <div class="container text-center" style="color: rgba(8, 6, 134, 0.822);">
+    <ul>
+   <li><b>Uses Docker For Containerization of Application</b></br></li> 
+    <li><b>Running Multiple Servers on a Single Machine(like Nginx and Apache seriously one of most likely thing)</b></br></li> 
+    <li><b>Uses Github for hosting Purposes</b></br></li> 
+    <li><b>Can Host Project on AWS EC2 instance(need subscription)</b></li> 
+    <li><b>Database MongoDB</b></li>
+    </ul>
+    </div>
+    <form>  
+      <input class="btn btn-primary animate__animated animate__bounceInUp wow" type="button" value="Click Me " onclick="msg()"/>  
+      </form>  
+</div>
+</section>
+<!--download
+-->
+
+<!--contact-->
+<section class=" msg1 wow animate__animated animate__zoomIn" id="message">
+  <div class="container text-center py-5 ">
+    <i class="fa fa-refresh myicon"></i>
+    <h1>Contact me</h1>
+    <div style="color: rgba(8, 6, 134, 0.822);">
+    <p>Email:Amanhaldiya512@gmail.com</p>
+    <p>Mobile No: +918005711851</p>
+    <P>Amity University 2020-2024(B-tech(CSE))</P>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!--end contact-->
+
+<!--donload
+<section class="Msg wow animate__animated animate__zoomInmessage py-5">
+  <div class="container text-center" id="message" >
+    <h1>we got</h1>
+    <div class="container">
+      <div class="col-md-6">
+      <p>hey</p>
+      </br>
+      <p>whats ups</p>
+      </div>
+      <div class="col-md-6">
+        <p>hey</p>
+      </br>
+      <p>whats ups</p>
+      </div>
+    </div>
+
+    
+<button class="btn btn-primary"> whats !</button>
+</div>
+</section>
+
+-->
+<section class="fotter Msg wow animate__animated animate__zoomIn">
+  <div class="container py-5 text-center"  >
+    <p style="color:rgba(7, 8, 46, 0.822)">copyright
+    <br>Designed by Aman Gupta
+    
+    </p>
+  </div>
+</section>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+  src="https://code.jquery.com/jquery-3.7.0.js"
+  integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+  crossorigin="anonymous"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+    integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+    crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="{% static 'js1/owl.carousel.min.js'  %}"></script>
+  <script>
+  $(document).ready(function(){
+      $(".owl-carousel").owlCarousel(
+         { rewind:true, 
+          autoplay:true,
+          loop:true,
+          margin:10,
+          responsive:{ 
+         
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:3,
+              nav:true,
+              loop:false
+          }
+      }
+   } );
+    }
+    );
+    </script>  
+  <!-- <script src="html/.js"></script>-->  
+   <script src="{% static 'js2/dist/wow.min.js' %}"></script>  
+   <script>
+    new WOW().init();
+    </script>
+    <script>
+    $(document).ready(function ()
+    {
+          $(".menus li a ").click(function ()
+        {
+      let target = $(this).attr("href");
+      $("html,body").animate(
+       {
+          scrollTop: $(target).offset().top;
+        }
+       ,5000 ms);
+        });
+    } );
+      </script>
+      <script>
+        function
+      </script>
+</body>
+</html>
